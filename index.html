@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ehtesum-Ul-Islam — DevOps & Backend Engineer. Building scalable systems and cloud-native solutions.">
+    <title>Ehtesum | DevOps & Backend Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ── NAVBAR ─────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">&lt;Ehtesum /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about"      class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills"     class="nav-link">Skills</a></li>
+                <li><a href="#projects"   class="nav-link">Projects</a></li>
+                <li><a href="#beyond"     class="nav-link">Hobbies</a></li>
+                <li><a href="#contact"    class="nav-link">Contact</a></li>
+            </ul>
+            <a href="cv.html" target="_blank" class="btn btn-outline nav-cv">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about"      class="mobile-link">About</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#skills"     class="mobile-link">Skills</a></li>
+            <li><a href="#projects"   class="mobile-link">Projects</a></li>
+            <li><a href="#beyond"     class="mobile-link">Hobbies</a></li>
+            <li><a href="#contact"    class="mobile-link">Contact</a></li>
+            <li>
+                <a href="cv.html" target="_blank" class="btn btn-primary mobile-cv">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ── HERO ───────────────────────────────────────── -->
+    <section class="hero" id="home">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+
+        <div class="container hero-container">
+            <div class="hero-text animate-hero">
+                <span class="hero-greeting">Hello, World! 👋</span>
+                <h1 class="hero-name">
+                    Ehtesum<br>
+                    <span class="accent">Ul-Islam</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">I'm a </span>
+                    <span class="typed" id="typedText"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-bio">
+                    DevOps &amp; Backend Engineer building scalable systems,
+                    cloud-native solutions, and AI-powered applications.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ehtesum" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ehtesumulislam@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image animate-hero delay-1">
+                <div class="img-blob-wrap">
+                    <!--
+                        PHOTO: Replace assets/images/profile.jpg with your photo.
+                        Recommended: square image, at least 400×400 px.
+                        If the image is missing, your initials are shown instead.
+                    -->
+                    <img
+                        src="assets/images/profile.jpg"
+                        alt="Ehtesum-Ul-Islam"
+                        class="profile-photo"
+                        id="profilePhoto"
+                        onerror="this.style.display='none';document.getElementById('heroInitials').style.display='flex'"
+                    >
+                    <div class="initials-fallback" id="heroInitials">EUI</div>
+                    <div class="blob-ring"></div>
+                </div>
+                <div class="dots-deco"></div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ── ABOUT ──────────────────────────────────────── -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <div class="about-img-frame">
+                        <img
+                            src="assets/images/profile.jpg"
+                            alt="Ehtesum-Ul-Islam"
+                            onerror="this.style.display='none';document.getElementById('aboutInitials').style.display='flex'"
+                        >
+                        <div class="initials-fallback" id="aboutInitials">EUI</div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <p>
+                        I'm a passionate <strong>DevOps &amp; Backend Engineer</strong> based in
+                        <strong>Finland 🇫🇮</strong>, holding a Master's in
+                        <strong>Software Engineering &amp; Digital Transformation</strong> from
+                        <strong>LUT University</strong> with 2+ years of hands-on industry experience.
+                    </p>
+                    <p>
+                        I specialize in designing <strong>CI/CD pipelines</strong>, managing
+                        <strong>Azure cloud infrastructure</strong>, building robust
+                        <strong>Django REST APIs</strong>, and containerizing applications with
+                        <strong>Docker</strong>.
+                    </p>
+                    <p>
+                        My curiosity drives me toward the cutting edge — from
+                        <strong>LLM-based systems</strong> and <strong>knowledge graph AI</strong>
+                        to <strong>blockchain &amp; DeFi platforms</strong>. I love turning complex
+                        problems into elegant, scalable solutions.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">MSc</span>
+                            <span class="stat-label">LUT University</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">☁️</span>
+                            <span class="stat-label">Azure Cloud</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">🤖</span>
+                            <span class="stat-label">AI &amp; ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIENCE ───────────────────────────────────── -->
+    <section class="experience section alt-bg" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Where I've worked</span>
+                <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-header">
+                            <div>
+                                <h3 class="tl-role">Junior Software Engineer</h3>
+                                <span class="tl-company">TechOptions</span>
+                            </div>
+                            <span class="tl-date">Mar 2022 – Jun 2023</span>
+                        </div>
+                        <ul class="tl-bullets">
+                            <li>Deployed and maintained CCIKM on BCC cloud; built CI/CD pipelines with GitHub Actions and configured NGINX SSL.</li>
+                            <li>Migrated Solorrow GmbH backend to Azure VM and maintained its Xamarin mobile app using RabbitMQ and Bitbucket Pipelines.</li>
+                            <li>Designed a document search engine, authentication system, and time-series database using Django &amp; PostgreSQL.</li>
+                            <li>Presented CCIKM to the Bangladesh Ministry of Environment and German collaborators.</li>
+                            <li>Contributed to an organic goods delivery system with MongoDB-backed workflows using Flask.</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">NGINX</span>
+                            <span class="tag">RabbitMQ</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <div class="tl-header">
+                            <div>
+                                <h3 class="tl-role">Software Engineer Intern</h3>
+                                <span class="tl-company">TechOptions</span>
+                            </div>
+                            <span class="tl-date">Nov 2021 – Feb 2022</span>
+                        </div>
+                        <ul class="tl-bullets">
+                            <li>Designed the admin panel and tool page of CCIKM-BD (Climate Change Information and Knowledge Management Bangladesh) under UNDP.</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">UNDP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────── -->
+    <section class="skills section alt-bg" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What I work with</span>
+                <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <div class="tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Database Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">GitOps</span>
+                        <span class="tag">NGINX</span>
+                        <span class="tag">RabbitMQ</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud</h3>
+                    <div class="tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">ECS</span>
+                        <span class="tag">Cloud Infrastructure</span>
+                        <span class="tag">Cloud-Native</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI &amp; Data</h3>
+                    <div class="tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Selenium</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Exploring</h3>
+                    <div class="tags">
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">DeFi</span>
+                        <span class="tag">System Design</span>
+                        <span class="tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="sk-icon"><i class="fas fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <div class="tags">
+                        <span class="tag">Problem-Solving</span>
+                        <span class="tag">Teamwork</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────── -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What I've built</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- 1 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-brain"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/seal_with_kg_no_hallucination" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>SEAL — Anti-Hallucination LLM</h3>
+                    <p>Mental-health dialogue system combining Selective Abstention Learning (SEAL) with a dynamic RDF knowledge graph. Extracts symptoms, infers disorders with confidence scoring, and returns a rejection token when confidence is too low — ensuring safe, grounded responses.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">RDF / KG</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/offline_latex_compiler" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Offline LaTeX Compiler</h3>
+                    <p>Self-hosted, Overleaf-style LaTeX IDE that runs entirely in the browser — no account, no internet, no subscription. Features CodeMirror editor, one-click PDF compilation, live preview via pdf.js, SyncTeX, multi-file projects, and built-in templates.</p>
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">pdf.js</span>
+                        <span class="tag">Self-hosted</span>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/seal_multi_agent" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>SEAL Multi-Agent System</h3>
+                    <p>Multi-agent AI architecture built on top of the SEAL framework, featuring a knowledge graph backend, benchmark evaluation pipeline, and an interactive KG visualisation interface.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Multi-Agent</span>
+                        <span class="tag">Knowledge Graph</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/order_forecast_from_history" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Order Demand Forecasting</h3>
+                    <p>End-to-end ML pipeline for predicting future order volumes from historical data. Includes preprocessing, lag/rolling feature engineering, regression model training, and MAE/RMSE evaluation — applicable to inventory planning and supply-chain optimisation.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">Time-Series</span>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/ccikm-Ecommerce_clone" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Django E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce web application built with Django. Covers product listings, cart management, user authentication, and SQLite-backed data persistence.</p>
+                    <div class="tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">REST</span>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="project-card reveal">
+                    <div class="pc-top">
+                        <div class="pc-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="pc-links">
+                            <a href="https://github.com/ehtesum/django_blog" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Django Blog CMS</h3>
+                    <p>Content management system with a blog engine built on Django. Supports post creation, user authentication, rich-text editing, and a clean admin dashboard.</p>
+                    <div class="tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">CMS</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-more reveal">
+                <a href="https://github.com/ehtesum" target="_blank" rel="noopener" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ───────────────────────────────── -->
+    <section class="certs section alt-bg" id="certs">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Verified learning</span>
+                <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
+            </div>
+
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-docker"></i></div>
+                    <div class="cert-body">
+                        <h3>Docker &amp; Kubernetes Masterclass</h3>
+                        <p>Build, Deploy, &amp; Scale on AWS, Azure, &amp; GCP</p>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy</span>
+                    </div>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-infinity"></i></div>
+                    <div class="cert-body">
+                        <h3>The Ultimate DevOps Bootcamp</h3>
+                        <p>Comprehensive DevOps training covering CI/CD pipelines and toolchain</p>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── BEYOND CODE ──────────────────────────────────── -->
+    <section class="beyond section" id="beyond">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Away from the terminal</span>
+                <h2 class="section-title">Beyond <span class="accent">Code</span></h2>
+            </div>
+
+            <div class="beyond-grid">
+                <div class="beyond-card reveal">
+                    <div class="beyond-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Training</h3>
+                    <ul class="beyond-list">
+                        <li><i class="fas fa-mobile-alt"></i> Android Development Bootcamp</li>
+                        <li><i class="fas fa-trophy"></i> Competitive Programming Bootcamp</li>
+                    </ul>
+                </div>
+                <div class="beyond-card reveal">
+                    <div class="beyond-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Favourite Games</h3>
+                    <ul class="beyond-list">
+                        <li><i class="fas fa-crosshairs"></i> Call of Duty</li>
+                        <li><i class="fas fa-fist-raised"></i> Mortal Kombat X</li>
+                        <li><i class="fas fa-rocket"></i> Titanfall</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────── -->
+    <section class="contact section alt-bg" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Let's connect</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-lead">
+                        I'm always open to new opportunities, collaborations, and interesting
+                        conversations. My inbox is always open!
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:ehtesumulislam@gmail.com" class="contact-link">
+                            <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>Email</span>
+                                <strong>ehtesumulislam@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" class="contact-link">
+                            <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span>LinkedIn</span>
+                                <strong>ehtesum-ul-islam</strong>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ehtesum" target="_blank" class="contact-link">
+                            <div class="cl-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span>GitHub</span>
+                                <strong>github.com/ehtesum</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta reveal">
+                    <div class="cta-card">
+                        <h3>Ready to collaborate?</h3>
+                        <p>Whether it's a full-time role, freelance project, or open-source work — let's talk.</p>
+                        <a href="mailto:ehtesumulislam@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send a Message
+                        </a>
+                        <a href="cv.html" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo">&lt;Ehtesum /&gt;</a>
+            <p>Designed &amp; built by <span class="accent">Ehtesum-Ul-Islam</span></p>
+            <p class="footer-copy">© 2025 · All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

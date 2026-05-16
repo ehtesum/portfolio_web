@@ -1,0 +1,42 @@
+PROFESSIONAL EXPERIENCE
+TechOptions - Junior Software Engineer
+March 2022 - June 2023
+● Deployed and maintained CCIKM on BCC cloud; implemented CI/CD pipelines and
+configured NGINX SSL. ( DevOps, ECS, CI/CD, GitOps, Github action, Django,
+Postgresql, RestAPI, Trello)
+● Migrated Solorrow GmbH backend to Azure VM and maintained its Xamarin mobile
+app. ( DevOps, Xamarin, RabbitMQ, Bitbucket Pipeline)
+● Designed and developed document search engine, authentication system, and time-series
+database. ( Django, RestAPI, Postgresql )
+● Presented CCIKM to the Bangladesh Ministry of Environment and German collaborators.
+● Contributed to the design of an organic goods delivery system with database-driven
+workflows. ( Flask, Agile, MongoDB )
+TechOptions - Internship
+November 2021 - February 2022
+● Designed the admin panel and tool page of CCIKM-BD ( Climate Change Information
+and Knowledge Management Bangladesh) under UNDP. ( Django, Postgresql)
+Certification
+● The ultimate DevOps Bootcamp course for all your DevOps learning (Udemy).
+● Docker & Kubernetes Masterclass: Build, Deploy, & Scale on AWS, Azure, & GCP
+(Udemy)
+
+SKILLS
+Problem-Solving
+Teamwork
+Communication
+
+Training
+Android Development
+Bootcamp
+Competitive
+Programming Bootcamp
+
+I am applying for the DevOps Engineer role at Elevait. With nearly two years of experience in
+DevOps, CI/CD, Docker, Kubernetes, and cloud infrastructure, I can contribute to building
+scalable and reliable systems for your AI platform.
+At TechOptions, I deployed and maintained services on the Bangladesh Computer Council
+cloud, built CI/CD pipelines with GitHub Actions and Bitbucket, migrated the Solorrow GmbH
+backend to Azure VM, and worked with RabbitMQ, Docker, and NGINX SSL. I also developed
+a document search engine, authentication system, and time-series database, and
+presented the CCIKM project to the Bangladesh Ministry of Environment and German
+stakeholders

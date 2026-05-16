@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehtesum Ul Islam — CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy:      #1f3461;
+            --navy-dim:  rgba(31, 52, 97, 0.12);
+            --sidebar:   #edf0f6;
+            --text:      #333;
+            --muted:     #555;
+            --faint:     #777;
+            --border:    #b8c4d8;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #b0b8c8;
+            color: var(--text);
+            font-size: 13px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* ── Print / Save bar ─────────────────────────────────── */
+        .topbar {
+            position: fixed;
+            inset: 0 0 auto 0;
+            background: var(--navy);
+            color: white;
+            padding: 10px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 200;
+            font-size: 12.5px;
+            gap: 16px;
+        }
+        .topbar strong { font-size: 13.5px; }
+        .topbar-note   { opacity: 0.65; font-size: 11.5px; }
+        .topbar-actions { display: flex; align-items: center; gap: 12px; }
+        .topbar a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 12px;
+            transition: color .2s;
+        }
+        .topbar a:hover { color: white; }
+        .btn-save {
+            background: white;
+            color: var(--navy);
+            border: none;
+            padding: 7px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            transition: background .2s;
+        }
+        .btn-save:hover { background: #dce8ff; }
+
+        /* ── Page wrapper ─────────────────────────────────────── */
+        .pages { padding: 58px 0 30px; }
+
+        .page {
+            width: 210mm;
+            background: white;
+            margin: 14px auto;
+            box-shadow: 0 6px 28px rgba(0,0,0,0.28);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ── Header (page 1 only) ─────────────────────────────── */
+        .cv-header {
+            background: var(--navy);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            flex-shrink: 0;
+        }
+        .cv-photo {
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.35);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .cv-initials {
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.35);
+            background: rgba(255,255,255,0.15);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        .cv-header-text h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 900;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+        .cv-header-text h2 {
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 0.26em;
+            text-transform: uppercase;
+            opacity: 0.72;
+            margin-top: 5px;
+        }
+
+        /* ── Page body (sidebar + main) ──────────────────────── */
+        .page-body {
+            display: flex;
+            flex: 1;
+        }
+
+        /* ── Sidebar ──────────────────────────────────────────── */
+        aside {
+            width: 207px;
+            background: var(--sidebar);
+            padding: 22px 18px;
+            flex-shrink: 0;
+        }
+
+        .sb-section { margin-bottom: 20px; }
+
+        .sb-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--navy);
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+            font-size: 0.67rem;
+            color: #444;
+            margin-bottom: 7px;
+            line-height: 1.4;
+        }
+        .contact-row i {
+            color: var(--navy);
+            font-size: 0.62rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+            width: 11px;
+            text-align: center;
+        }
+
+        .skill-row {
+            font-size: 0.68rem;
+            color: #444;
+            padding: 3px 0;
+            line-height: 1.4;
+            border-bottom: 1px dotted var(--border);
+        }
+        .skill-row:last-child { border-bottom: none; }
+        .skill-row strong { color: var(--navy); font-weight: 700; }
+
+        .sb-list { list-style: disc; padding-left: 13px; }
+        .sb-list li {
+            font-size: 0.68rem;
+            color: #444;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        /* ── Main content ─────────────────────────────────────── */
+        main {
+            flex: 1;
+            padding: 22px 26px 22px 20px;
+            min-width: 0;
+        }
+
+        .cv-section { margin-bottom: 17px; }
+
+        .sec-head {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.62rem;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--navy);
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--navy);
+            margin-bottom: 11px;
+        }
+        .sec-icon {
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            background: var(--navy);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.52rem;
+            flex-shrink: 0;
+        }
+
+        /* Profile */
+        .profile-text {
+            font-size: 0.7rem;
+            line-height: 1.65;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Timeline items */
+        .tl-wrap { position: relative; }
+
+        .tl-item {
+            display: flex;
+            gap: 11px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .tl-item:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 3.5px;
+            top: 13px;
+            bottom: -12px;
+            width: 1px;
+            background: var(--border);
+        }
+        .tl-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            border: 2px solid var(--navy);
+            background: white;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        .tl-body { flex: 1; min-width: 0; }
+
+        /* Job */
+        .job-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 1px;
+        }
+        .job-co   { font-weight: 700; font-size: 0.76rem; color: var(--navy); }
+        .job-date { font-size: 0.63rem; color: var(--faint); white-space: nowrap; }
+        .job-role { font-size: 0.68rem; font-style: italic; color: var(--muted); margin-bottom: 5px; }
+        .job-bul  { list-style: disc; padding-left: 14px; }
+        .job-bul li {
+            font-size: 0.68rem; color: #444;
+            margin-bottom: 3px; line-height: 1.45;
+        }
+
+        /* Education */
+        .edu-deg    { font-weight: 700; font-size: 0.73rem; color: var(--text); margin-bottom: 2px; }
+        .edu-school { font-size: 0.68rem; color: var(--muted); }
+        .edu-period { font-size: 0.63rem; color: var(--faint); }
+
+        /* Certifications */
+        .cert-name  { font-size: 0.7rem; font-weight: 600; color: #333; line-height: 1.45; }
+
+        /* Thesis */
+        .thesis-body { font-size: 0.69rem; font-weight: 700; color: #333; line-height: 1.48; }
+
+        /* Projects */
+        .proj-title { font-weight: 700; font-size: 0.74rem; color: var(--navy); margin-bottom: 3px; }
+        .proj-desc  {
+            font-size: 0.68rem; color: #444;
+            line-height: 1.52; margin-bottom: 5px;
+            text-align: justify;
+        }
+        .proj-bul { list-style: disc; padding-left: 14px; margin-bottom: 4px; }
+        .proj-bul li {
+            font-size: 0.66rem; color: var(--muted);
+            margin-bottom: 2px; line-height: 1.45;
+        }
+        .proj-link {
+            font-size: 0.63rem; color: var(--navy);
+            font-style: italic; opacity: 0.85;
+        }
+
+        /* ── Print ────────────────────────────────────────────── */
+        @media print {
+            .topbar  { display: none !important; }
+            .pages   { padding: 0; }
+            body     { background: white; }
+
+            .page {
+                width: 100%; margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+            .page:last-child { page-break-after: auto; }
+
+            .page-body { min-height: auto; }
+        }
+
+        @page { size: A4 portrait; margin: 0; }
+    </style>
+</head>
+<body>
+
+<!-- ── Top bar ────────────────────────────────────────────── -->
+<div class="topbar">
+    <div>
+        <strong>Ehtesum Ul Islam — CV</strong>
+        <span class="topbar-note"> &nbsp;·&nbsp; Updated with GitHub Projects</span>
+    </div>
+    <div class="topbar-actions">
+        <a href="index.html">← Back to Portfolio</a>
+        <button class="btn-save" onclick="window.print()">⬇ Save as PDF</button>
+    </div>
+</div>
+
+<div class="pages">
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE 1
+══════════════════════════════════════════════════════════ -->
+<div class="page">
+
+    <!-- Header -->
+    <div class="cv-header">
+        <img
+            src="assets/images/profile.jpg"
+            alt="Ehtesum Ul Islam"
+            class="cv-photo"
+            onerror="this.style.display='none';document.getElementById('hdrI').style.display='flex'"
+        >
+        <div class="cv-initials" id="hdrI">EUI</div>
+        <div class="cv-header-text">
+            <h1>Ehtesum Ul Islam</h1>
+            <h2>DevOps &amp; Backend Engineer</h2>
+        </div>
+    </div>
+
+    <div class="page-body">
+
+        <!-- Sidebar 1 -->
+        <aside>
+
+            <div class="sb-section">
+                <div class="sb-title">Contact</div>
+                <div class="contact-row">
+                    <i class="fas fa-phone"></i>
+                    <span>+358 41 326 5236</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fas fa-envelope"></i>
+                    <span>ehtesumulislam@gmail.com</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ralssintie 16 H 89, Helsinki, 00720</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/ehtesum-ul-islam</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/ehtesum</span>
+                </div>
+            </div>
+
+            <div class="sb-section">
+                <div class="sb-title">Technical Skills</div>
+                <div class="skill-row"><strong>DevOps</strong> – Intermediate</div>
+                <div class="skill-row"><strong>CI/CD</strong> – Intermediate</div>
+                <div class="skill-row"><strong>Docker</strong> – Intermediate</div>
+                <div class="skill-row"><strong>Python</strong> – Intermediate</div>
+                <div class="skill-row"><strong>Django</strong> – Intermediate</div>
+                <div class="skill-row"><strong>RestAPI</strong> – Intermediate</div>
+                <div class="skill-row"><strong>FastAPI</strong> – Beginner</div>
+                <div class="skill-row"><strong>Database</strong> – Intermediate</div>
+                <div class="skill-row"><strong>System Design</strong> – Advanced</div>
+                <div class="skill-row"><strong>Database Design</strong> – Advanced</div>
+                <div class="skill-row"><strong>LLM Engineering</strong> – Beginner</div>
+            </div>
+
+            <div class="sb-section">
+                <div class="sb-title">Soft Skills</div>
+                <ul class="sb-list">
+                    <li>Project Management</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Presentation</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- Main 1 -->
+        <main>
+
+            <!-- Profile -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-user"></i></div>
+                    Profile
+                </div>
+                <p class="profile-text">
+                    Results-driven DevOps &amp; Backend Engineer with 2+ years of experience in CI/CD,
+                    Docker, and cloud infrastructure. Specialised in building scalable deployment pipelines,
+                    automating workflows, and ensuring system reliability. Hands-on expertise in Azure, AWS,
+                    GitOps practices, and monitoring, with a strong focus on problem-solving and efficiency.
+                    Currently pursuing an MSc in Software Engineering &amp; Digital Transformation at
+                    Lappeenranta University of Technology, Finland.
+                </p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-briefcase"></i></div>
+                    Work Experience
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="job-head">
+                            <span class="job-co">TechOptions</span>
+                            <span class="job-date">MARCH 2023 – JUNE 2024</span>
+                        </div>
+                        <div class="job-role">Junior Software Engineer</div>
+                        <ul class="job-bul">
+                            <li>Deployed and maintained CCIKM on BCC cloud; implemented CI/CD pipelines and configured NGINX SSL. (<strong>DevOps, ECS, CI/CD, GitOps, GitHub Actions, Django, PostgreSQL, REST API, Trello</strong>)</li>
+                            <li>Migrated Solorrow GmbH backend to Azure VM and maintained its Xamarin mobile app. (<strong>DevOps, Xamarin, RabbitMQ, Bitbucket Pipeline</strong>)</li>
+                            <li>Designed and developed document search engine, authentication system, and time-series database. (<strong>Django, REST API, PostgreSQL</strong>)</li>
+                            <li>Presented CCIKM to the Bangladesh Ministry of Environment and German collaborators.</li>
+                            <li>Designed scalable APIs and storage models to visualise environmental sensor data across long time periods.</li>
+                            <li>Contributed to the design of an organic goods delivery system with database-driven workflows. (<strong>Flask, Agile, MongoDB</strong>)</li>
+                            <li>Ensured mobile app and cloud infrastructure stability through regular monitoring, updates, and deployment support – Solorrow GmbH.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="job-head">
+                            <span class="job-co">TechOptions</span>
+                            <span class="job-date">NOVEMBER 2021 – FEBRUARY 2022</span>
+                        </div>
+                        <div class="job-role">Intern</div>
+                        <ul class="job-bul">
+                            <li>Designed the admin panel and tool page of CCIKM-BD (Climate Change Information and Knowledge Management Bangladesh) under UNDP. (<strong>Django, PostgreSQL</strong>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-graduation-cap"></i></div>
+                    Education
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="edu-deg">Masters in Software Engineering and Digital Transformation</div>
+                        <div class="edu-school">Lappeenranta University of Technology, Finland</div>
+                        <div class="edu-period">August 2023 – December 2025</div>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="edu-deg">Bachelor of Science in Computer Science and Engineering</div>
+                        <div class="edu-school">North South University, Bangladesh</div>
+                        <div class="edu-period">January 2016 – May 2021</div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div><!-- /page 1 -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE 2
+══════════════════════════════════════════════════════════ -->
+<div class="page">
+    <div class="page-body">
+
+        <!-- Sidebar 2 -->
+        <aside>
+
+            <div class="sb-section">
+                <div class="sb-title">Academic Projects</div>
+                <ul class="sb-list">
+                    <li>LLM assistant for Finnair</li>
+                    <li>Smart Mirror for outfit advice</li>
+                    <li>F-Secure</li>
+                    <li>Smart Waste Distributor</li>
+                    <li>Wearable Alcohol Monitor</li>
+                </ul>
+            </div>
+
+            <div class="sb-section">
+                <div class="sb-title">Languages</div>
+                <ul class="sb-list">
+                    <li>English (Fluent)</li>
+                    <li>Finnish (Beginner)</li>
+                </ul>
+            </div>
+
+            <div class="sb-section">
+                <div class="sb-title">Hobby</div>
+                <ul class="sb-list">
+                    <li>Hiking</li>
+                    <li>Cooking</li>
+                    <li>Chess</li>
+                </ul>
+            </div>
+
+            <div class="sb-section">
+                <div class="sb-title">Training</div>
+                <ul class="sb-list">
+                    <li>Competitive Programming Bootcamp – North South University, 2018</li>
+                    <li>Android Development Bootcamp – North South University, 2019</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- Main 2 -->
+        <main>
+
+            <!-- Certifications -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-certificate"></i></div>
+                    Certifications
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="cert-name">The Ultimate DevOps Bootcamp – All Your DevOps Learning (Udemy)</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="cert-name">Docker &amp; Kubernetes Masterclass: Build, Deploy &amp; Scale on AWS, Azure &amp; GCP (Udemy)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thesis / Publications -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-book-open"></i></div>
+                    Thesis / Publications
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="thesis-body">"Low-Cost Heart Rate Sensor and Mental Stress Detection Using Machine Learning," 2021 5th International Conference on Trends in Electronics and Informatics (ICOEI), 2021, pp. 1369–1374, DOI:10.1109/ICOEI51242.2021.9452873.</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="thesis-body">Literature Review on the Impact of DevSecOps on the Software Development Life Cycle, Enhancing Security Efficiency and Compliance.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="cv-section">
+                <div class="sec-head">
+                    <div class="sec-icon"><i class="fas fa-code-branch"></i></div>
+                    Projects
+                </div>
+
+                <!-- 1 — SEAL KG (original) -->
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="proj-title">Dynamic Knowledge-Graph–Grounded LLM for Mental Health Safety</div>
+                        <p class="proj-desc">
+                            Designed a neural–symbolic system combining Selective Abstention Learning (SEAL) and dynamic RDF
+                            knowledge graphs to mitigate hallucinations in mental-health dialogue systems. Built an end-to-end
+                            pipeline for symptom extraction, disorder matching, and safe response generation.
+                        </p>
+                        <ul class="proj-bul">
+                            <li><strong>Techniques:</strong> Neural–Symbolic AI, Selective Abstention Learning, Knowledge Graphs</li>
+                            <li><strong>NLP:</strong> GPT-2 fine-tuning, symptom extraction, similarity scoring</li>
+                            <li><strong>Data &amp; Semantics:</strong> RDF, Turtle (TTL), ontology-based reasoning</li>
+                            <li><strong>Evaluation:</strong> Hallucination rate, abstention accuracy, disorder matching</li>
+                            <li><strong>Tools:</strong> PyTorch, HuggingFace Transformers, RDFlib, Python</li>
+                        </ul>
+                        <div class="proj-link">github.com/ehtesum/seal_with_kg_no_hallucination</div>
+                    </div>
+                </div>
+
+                <!-- 2 — SEAL Multi-Agent (NEW) -->
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="proj-title">SEAL Multi-Agent System</div>
+                        <p class="proj-desc">
+                            Extended the SEAL framework into a multi-agent architecture with a knowledge graph backend,
+                            benchmark evaluation pipeline, and an interactive KG visualisation interface.
+                        </p>
+                        <ul class="proj-bul">
+                            <li><strong>Techniques:</strong> Multi-Agent AI, Knowledge Graph reasoning, Benchmark evaluation</li>
+                            <li><strong>Tools:</strong> Python (86 %), RDFlib, HTML/JS KG visualisation</li>
+                        </ul>
+                        <div class="proj-link">github.com/ehtesum/seal_multi_agent</div>
+                    </div>
+                </div>
+
+                <!-- 3 — Offline LaTeX Compiler (NEW) -->
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="proj-title">Offline LaTeX Compiler</div>
+                        <p class="proj-desc">
+                            Self-hosted, Overleaf-style LaTeX IDE that runs entirely in the browser — no account, no internet,
+                            no subscription. Features one-click PDF compilation (pdflatex/xelatex/lualatex), live pdf.js preview,
+                            SyncTeX, multi-file projects, and built-in document templates.
+                        </p>
+                        <ul class="proj-bul">
+                            <li><strong>Backend:</strong> Python 3.10+, Flask 3.x</li>
+                            <li><strong>Frontend:</strong> JavaScript (ES modules), CodeMirror, pdf.js</li>
+                        </ul>
+                        <div class="proj-link">github.com/ehtesum/offline_latex_compiler</div>
+                    </div>
+                </div>
+
+                <!-- 4 — Order Forecasting (NEW) -->
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="proj-title">Order Demand Forecasting</div>
+                        <p class="proj-desc">
+                            End-to-end ML pipeline for predicting future order volumes from historical data. Covers
+                            preprocessing, lag/rolling feature engineering, regression model training, and MAE/RMSE evaluation —
+                            applicable to inventory planning and supply-chain optimisation.
+                        </p>
+                        <ul class="proj-bul">
+                            <li><strong>Techniques:</strong> Time-Series Forecasting, Feature Engineering, Regression modelling</li>
+                            <li><strong>Tools:</strong> Python, Pandas, scikit-learn</li>
+                        </ul>
+                        <div class="proj-link">github.com/ehtesum/order_forecast_from_history</div>
+                    </div>
+                </div>
+
+            </div><!-- /Projects -->
+
+        </main>
+    </div>
+</div><!-- /page 2 -->
+
+</div><!-- /pages -->
+</body>
+</html>
