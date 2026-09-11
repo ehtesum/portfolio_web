@@ -23,6 +23,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#research">Research</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#stack">Stack</a></li>
                     <li><a href="cv.html" class="nav-cv-btn" target="_blank" rel="noopener">CV ↗</a></li>
                 </ul>
@@ -33,7 +34,7 @@
         <section class="intro-header" id="about">
             <div class="status-badge">
                 <span class="status-dot"></span>
-                <span>Based in Espoo / Helsinki, Finland</span>
+                <span>Available for Software Engineering &amp; AI Research</span>
             </div>
 
             <h1 class="author-title">Ehtesum-ul-Islam</h1>
@@ -81,6 +82,24 @@
                         for multimodal visual document understanding. Investigates decoupled process verification, adaptive test-time compute, 
                         and runtime model collaboration across specialized Vision-Language Models.
                     </p>
+                    <div class="arch-diagram">
+<pre><code>[Input Document & Query]
+           │
+           ▼
+┌─────────────────────────────────────────────────────────────┐
+│               MACT 5-Agent Coordinated Pipeline             │
+├─────────────────────────────────────────────────────────────┤
+│  1. Context Agent      → Schema, layout & modality parser   │
+│  2. Planning Agent     → Sub-goal decomposition & reasoning │
+│  3. Execution Agent    → Multi-VLM specialized execution    │
+│  4. Verification Agent → Decoupled step-level self-check    │
+│  5. Decision Agent     → Consensus gating & abstention      │
+└─────────────────────────────────────────────────────────────┘
+           │
+     ┌─────┴───────────────────────┐
+     ▼                             ▼
+[Verified Grounded Output]    [Selective Abstention]</code></pre>
+                    </div>
                     <div class="project-tags">
                         <span class="mono-tag">Python</span>
                         <span class="mono-tag">PyTorch</span>
@@ -200,6 +219,7 @@
         <section class="section" id="research">
             <div class="section-label">// Research &amp; Publications</div>
 
+            <div class="sub-section-title">// Peer-Reviewed Conference Paper</div>
             <article class="pub-item">
                 <div class="pub-header">
                     <h2 class="pub-title">Low-Cost Heart Rate Sensor and Mental Stress Detection Using Machine Learning</h2>
@@ -221,6 +241,44 @@
                     <span class="mono-tag">Sensor Processing</span>
                 </div>
             </article>
+
+            <div class="sub-section-title">// Working Papers &amp; Preprints</div>
+            <div class="projects-stack">
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">Grounded Sequential Decision Processes with Decoupled Process Verification and Adaptive Test-Time Compute for Visual Document Reasoning</h2>
+                        <span class="mono-tag">Preprint (2026)</span>
+                    </div>
+                    <p class="project-desc">
+                        Formalizes visual document understanding as a sequential decision process. Employs decoupled step-level 
+                        process verification and adaptive test-time compute scaling across coordinated vision-language agents 
+                        to eliminate hallucinations and achieve high-precision factual grounding.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Multi-Agent Systems</span>
+                        <span class="mono-tag">Process Verification</span>
+                        <span class="mono-tag">Test-Time Compute</span>
+                        <span class="mono-tag">Visual Document Understanding</span>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">Empirical Investigation of DevSecOps Practices, Automation, and Security Pipeline Integration in Cloud Infrastructure</h2>
+                        <span class="mono-tag">LUT M.Sc. Thesis (Dec 2025)</span>
+                    </div>
+                    <p class="project-desc">
+                        Comprehensive empirical analysis evaluating automated vulnerability scanning, container security policies, 
+                        and CI/CD pipeline automation across cloud-native environments to optimize deployment frequency and reliability.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">DevSecOps</span>
+                        <span class="mono-tag">Cloud Infrastructure</span>
+                        <span class="mono-tag">CI/CD Automation</span>
+                        <span class="mono-tag">Container Security</span>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- ── Work Experience ────────────────────────────────── -->
@@ -362,6 +420,25 @@
                         <span class="mono-tag">HTML5 / CSS3</span>
                         <span class="mono-tag">Git / GitHub</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Certifications ─────────────────────────────────── -->
+        <section class="section" id="certifications">
+            <div class="section-label">// Certifications</div>
+
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3 class="edu-degree">Docker &amp; Kubernetes Masterclass</h3>
+                    <p class="edu-school">Build, Deploy &amp; Scale on AWS, Azure &amp; GCP — Udemy</p>
+                    <span class="edu-period">Microservices, Container Orchestration, CI/CD</span>
+                </div>
+
+                <div class="edu-card">
+                    <h3 class="edu-degree">The Ultimate DevOps Bootcamp</h3>
+                    <p class="edu-school">Comprehensive DevOps Engineering &amp; Automation — Udemy</p>
+                    <span class="edu-period">Infrastructure as Code, Continuous Delivery, Linux</span>
                 </div>
             </div>
         </section>

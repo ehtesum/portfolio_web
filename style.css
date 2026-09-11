@@ -314,6 +314,34 @@ a {
     color: var(--text-muted);
 }
 
+/* ── Architecture Diagram ────────────────────────────────── */
+.arch-diagram {
+    margin: 12px 0 14px 0;
+    padding: 14px 16px;
+    background: #0d0d0d;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+}
+
+.arch-diagram pre {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.73rem;
+    line-height: 1.45;
+    color: #c9d1d9;
+    letter-spacing: 0.02em;
+}
+
+.sub-section-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    margin: 24px 0 14px 0;
+}
+
 /* ── Research & Publications ─────────────────────────────── */
 .pub-item {
     background: var(--bg-subtle);
