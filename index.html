@@ -3,645 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ehtesum-Ul-Islam — Software Engineer & AI Systems Researcher. Specialising in Reliable AI, Multi-Agent & Multi-Model Systems, Cloud & DevOps.">
-    <title>Ehtesum | Software Engineer & AI Systems Researcher</title>
+    <meta name="description" content="Ehtesum-Ul-Islam — Software Engineer and AI Systems Researcher based in Finland. Focus on reliable AI, multi-agent multimodal systems, and scalable backend infrastructure.">
+    <title>Ehtesum-ul-Islam</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ── NAVBAR ─────────────────────────────────────── -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">&lt;Ehtesum /&gt;</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about"        class="nav-link">About</a></li>
-                <li><a href="#experience"   class="nav-link">Experience</a></li>
-                <li><a href="#skills"       class="nav-link">Skills</a></li>
-                <li><a href="#projects"     class="nav-link">Projects</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#certs"        class="nav-link">Certifications</a></li>
-                <li><a href="#contact"      class="nav-link">Contact</a></li>
-            </ul>
-            <a href="cv.html" target="_blank" class="btn btn-outline nav-cv">
-                <i class="fas fa-download"></i> View CV
-            </a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+    <div class="site-wrapper">
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="#about"        class="mobile-link">About</a></li>
-            <li><a href="#experience"   class="mobile-link">Experience</a></li>
-            <li><a href="#skills"       class="mobile-link">Skills</a></li>
-            <li><a href="#projects"     class="mobile-link">Projects</a></li>
-            <li><a href="#publications" class="mobile-link">Publications</a></li>
-            <li><a href="#certs"        class="mobile-link">Certifications</a></li>
-            <li><a href="#contact"      class="mobile-link">Contact</a></li>
-            <li>
-                <a href="cv.html" target="_blank" class="btn btn-primary mobile-cv">
-                    <i class="fas fa-download"></i> View CV
-                </a>
-            </li>
-        </ul>
-    </div>
+        <!-- ── Navigation ──────────────────────────────────────── -->
+        <header class="site-nav">
+            <a href="#" class="brand">ehtesum.dev</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="cv.html" class="nav-cv-btn" target="_blank" rel="noopener">CV ↗</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- ── HERO ───────────────────────────────────────── -->
-    <section class="hero" id="home">
-        <div class="hero-grid-bg"></div>
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
+        <!-- ── Intro Header ───────────────────────────────────── -->
+        <section class="intro-header" id="about">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Based in Espoo / Helsinki, Finland</span>
+            </div>
 
-        <div class="container hero-container">
-            <div class="hero-text animate-hero">
-                <span class="hero-greeting">Hello, World! 👋</span>
-                <h1 class="hero-name">
-                    Ehtesum<br>
-                    <span class="accent">Ul-Islam</span>
-                </h1>
-                <div class="hero-role">
-                    <span class="role-prefix">I'm a </span>
-                    <span class="typed" id="typedText"></span><span class="cursor">|</span>
-                </div>
-                <p class="hero-bio">
-                    Software Engineer &amp; AI Systems Researcher building reliable AI platforms,
-                    multi-agent multimodal architectures, scalable backend services, and cloud solutions.
+            <h1 class="author-title">Ehtesum-ul-Islam</h1>
+            <p class="author-subtitle">Software Engineer &amp; AI Systems Researcher</p>
+
+            <div class="intro-bio">
+                <p>
+                    I build reliable software systems and explore runtime coordination in artificial intelligence. 
+                    I hold a Master of Science in <strong>Software Engineering &amp; Digital Transformation</strong> 
+                    from <strong>LUT University</strong> in Finland (completed December 2025) and a B.Sc. in Computer 
+                    Science and Engineering from North South University (2021).
                 </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/ehtesum" target="_blank" rel="noopener" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://codeforces.com/profile/ehtesum42" target="_blank" rel="noopener" aria-label="Codeforces">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="mailto:ehtesumulislam@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+                <p>
+                    With over two years of professional software engineering and cloud infrastructure experience, 
+                    my work spans high-throughput backend services (<strong>Python, Django, FastAPI, PostgreSQL</strong>), 
+                    cloud reliability (<strong>Microsoft Azure, Docker, automated CI/CD</strong>), and experimental AI. 
+                    My current research investigates <strong>multi-agent and multi-model multimodal inference</strong>, 
+                    process verification, test-time compute, and selective abstention to eliminate model hallucinations.
+                </p>
             </div>
 
-            <div class="hero-image animate-hero delay-1">
-                <div class="img-blob-wrap">
-                    <img
-                        src="assets/images/profile.jpg"
-                        alt="Ehtesum-Ul-Islam"
-                        class="profile-photo"
-                        id="profilePhoto"
-                        onerror="this.style.display='none';document.getElementById('heroInitials').style.display='flex'"
-                    >
-                    <div class="initials-fallback" id="heroInitials">EUI</div>
-                    <div class="blob-ring"></div>
-                </div>
-                <div class="dots-deco"></div>
+            <div class="intro-socials">
+                <a href="mailto:ehtesumulislam@gmail.com">ehtesumulislam@gmail.com ↗</a>
+                <a href="https://github.com/ehtesum" target="_blank" rel="noopener">github.com/ehtesum ↗</a>
+                <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" rel="noopener">linkedin ↗</a>
+                <a href="https://codeforces.com/profile/ehtesum42" target="_blank" rel="noopener">codeforces ↗</a>
             </div>
-        </div>
+        </section>
 
-        <a href="#about" class="scroll-cue" aria-label="Scroll down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
+        <!-- ── Selected Projects ──────────────────────────────── -->
+        <section class="section" id="projects">
+            <div class="section-label">// Selected Work</div>
 
-    <!-- ── ABOUT ──────────────────────────────────────── -->
-    <section class="about section" id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Get to know me</span>
-                <h2 class="section-title">About <span class="accent">Me</span></h2>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-photo reveal">
-                    <div class="about-img-frame">
-                        <img
-                            src="assets/images/profile.jpg"
-                            alt="Ehtesum-Ul-Islam"
-                            onerror="this.style.display='none';document.getElementById('aboutInitials').style.display='flex'"
-                        >
-                        <div class="initials-fallback" id="aboutInitials">EUI</div>
-                    </div>
-                </div>
-
-                <div class="about-content reveal">
-                    <p>
-                        I'm a <strong>Software Engineer &amp; AI Systems Researcher</strong> based in
-                        <strong>Finland 🇫🇮</strong>, holding a Master of Science in
-                        <strong>Software Engineering &amp; Digital Transformation</strong> from
-                        <strong>LUT University</strong> (completed December 2025) and a B.Sc. in
-                        <strong>Computer Science &amp; Engineering</strong> from <strong>North South University</strong> (2021).
-                    </p>
-                    <p>
-                        With 2+ years of professional software engineering and cloud experience, I bridge the gap
-                        between robust production systems and experimental AI. My core technical expertise spans
-                        <strong>Python (Django, FastAPI, Flask)</strong>, <strong>PostgreSQL</strong>,
-                        <strong>Microsoft Azure</strong>, <strong>Docker</strong>, and automated <strong>CI/CD pipelines</strong>.
-                    </p>
-                    <p>
-                        My current research focuses on <strong>Reliable &amp; Adaptive AI Systems</strong> — specifically
-                        multi-agent and multi-model multimodal inference, runtime model orchestration, verification,
-                        knowledge graphs, and selective abstention to eliminate hallucinations.
-                    </p>
-
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <span class="stat-num">2+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-num">M.Sc.</span>
-                            <span class="stat-label">LUT University (2025)</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-num">🧠</span>
-                            <span class="stat-label">Reliable AI</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-num">☁️</span>
-                            <span class="stat-label">Azure &amp; DevOps</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── EXPERIENCE ───────────────────────────────────── -->
-    <section class="experience section alt-bg" id="experience">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Where I've worked</span>
-                <h2 class="section-title">Work <span class="accent">Experience</span></h2>
-            </div>
-
-            <div class="timeline">
-
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                        <div class="tl-header">
-                            <div>
-                                <h3 class="tl-role">Junior Software Engineer</h3>
-                                <span class="tl-company">TechOptions</span>
-                            </div>
-                            <span class="tl-date">Mar 2022 – Jun 2023</span>
-                        </div>
-                        <ul class="tl-bullets">
-                            <li><strong>Cloud Infrastructure &amp; Production Maintenance (Solorrow GmbH, Germany):</strong> Migrated backend web services to Microsoft Azure virtual machines, managed RabbitMQ message queues and PostgreSQL databases, and built automated CI/CD deployment pipelines using GitHub Actions and Bitbucket.</li>
-                            <li><strong>National Portal Engineering (CCIKM.gov.bd):</strong> Designed the relational database schema, document search indexing, and REST APIs for a national climate portal under UNDP and the Bangladesh Ministry of Environment.</li>
-                            <li><strong>International Engineering Collaboration:</strong> Partnered directly with German engineers from TH Köln to standardize API specifications, payload contracts, and system requirements.</li>
-                            <li><strong>Interactive Data Visualization:</strong> Developed frontend JavaScript interactive time-series sensor charts for real-time environmental data.</li>
-                            <li><strong>Knowledge Transfer &amp; Documentation:</strong> Authored comprehensive system documentation and recorded video architecture walkthroughs for seamless team onboarding.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">Django</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">RabbitMQ</span>
-                            <span class="tag">NGINX</span>
-                            <span class="tag">REST APIs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <div class="tl-content">
-                        <div class="tl-header">
-                            <div>
-                                <h3 class="tl-role">Software Engineering Intern</h3>
-                                <span class="tl-company">TechOptions</span>
-                            </div>
-                            <span class="tl-date">Nov 2021 – Feb 2022</span>
-                        </div>
-                        <ul class="tl-bullets">
-                            <li>Designed and developed responsive administrative dashboards and data collection tools for the CCIKM platform under UNDP.</li>
-                            <li>Configured standardized Docker container environments for streamlined team-wide local development.</li>
-                            <li>Authored automated API integration test suites and data validation scripts to guarantee regression safety.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">UNDP</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ── SKILLS ─────────────────────────────────────── -->
-    <section class="skills section alt-bg" id="skills">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">What I work with</span>
-                <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-brain"></i></div>
-                    <h3>AI &amp; Systems</h3>
-                    <div class="tags">
-                        <span class="tag">Multi-Agent AI</span>
-                        <span class="tag">Vision-Language (VLM)</span>
-                        <span class="tag">Knowledge Graphs</span>
-                        <span class="tag">Selective Abstention</span>
-                        <span class="tag">Hallucination Reduction</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Transformers</span>
-                        <span class="tag">QLoRA</span>
-                    </div>
-                </div>
-
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-server"></i></div>
-                    <h3>Backend &amp; APIs</h3>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Django</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">RESTful APIs</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">SQLite</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">RabbitMQ</span>
-                    </div>
-                </div>
-
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud &amp; DevOps</h3>
-                    <div class="tags">
-                        <span class="tag">Microsoft Azure</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Kubernetes</span>
-                        <span class="tag">CI/CD Pipelines</span>
-                        <span class="tag">GitHub Actions</span>
-                        <span class="tag">Bitbucket</span>
-                        <span class="tag">NGINX</span>
-                        <span class="tag">Linux / Bash</span>
-                    </div>
-                </div>
-
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-code"></i></div>
-                    <h3>Languages</h3>
-                    <div class="tags">
-                        <span class="tag">Python (Advanced)</span>
-                        <span class="tag">JavaScript (ES6+)</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">HTML5 / CSS3</span>
-                    </div>
-                </div>
-
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Data &amp; Evaluation</h3>
-                    <div class="tags">
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Time-Series</span>
-                        <span class="tag">Scikit-Learn</span>
-                        <span class="tag">Data Visualization</span>
-                        <span class="tag">Benchmarking</span>
-                        <span class="tag">Sensor Analysis</span>
-                    </div>
-                </div>
-
-                <div class="skill-card reveal">
-                    <div class="sk-icon"><i class="fas fa-users-gear"></i></div>
-                    <h3>Practices &amp; Soft Skills</h3>
-                    <div class="tags">
-                        <span class="tag">System Architecture</span>
-                        <span class="tag">LiveOps / Monitoring</span>
-                        <span class="tag">Agile / Scrum</span>
-                        <span class="tag">Code Walkthroughs</span>
-                        <span class="tag">Root Cause Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── PROJECTS ───────────────────────────────────── -->
-    <section class="projects section" id="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">What I've built</span>
-                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
-            </div>
-
-            <div class="projects-grid">
+            <div class="projects-stack">
 
                 <!-- 1: MACT -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-brain"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/MACT_multimodel" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">MACT — Multi-Agent Multimodal VDU</h2>
+                        <a href="https://github.com/ehtesum/MACT_multimodel" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/MACT_multimodel ↗
+                        </a>
                     </div>
-                    <h3>MACT — Multi-Agent Multimodal VDU</h3>
-                    <p>Flagship experimental AI research exploring a 5-agent coordinated architecture (Context, Planning, Execution, Verification, Decision) for multimodal visual document understanding, test-time compute, and runtime model cooperation.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Multi-Agent</span>
-                        <span class="tag">Multimodal VLM</span>
-                        <span class="tag">Runtime Orchestration</span>
+                    <p class="project-desc">
+                        Experimental AI architecture exploring a 5-agent coordinated pipeline (Context, Planning, Execution, Verification, Decision) 
+                        for multimodal visual document understanding. Investigates decoupled process verification, adaptive test-time compute, 
+                        and runtime model collaboration across specialized Vision-Language Models.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">PyTorch</span>
+                        <span class="mono-tag">Multi-Agent Systems</span>
+                        <span class="mono-tag">Vision-Language</span>
+                        <span class="mono-tag">Test-Time Compute</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2: SEAL Anti-Hallucination -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-shield-halved"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/seal_with_kg_no_hallucination" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">SEAL — Anti-Hallucination Knowledge-Grounded LLM</h2>
+                        <a href="https://github.com/ehtesum/seal_with_kg_no_hallucination" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/seal_with_kg_no_hallucination ↗
+                        </a>
                     </div>
-                    <h3>SEAL — Anti-Hallucination LLM</h3>
-                    <p>Neural-symbolic dialogue system combining Selective Abstention Learning (SEAL) with dynamic RDF knowledge graphs. Extracts symptoms, scores confidence, and returns calibrated rejection tokens to guarantee safe, grounded responses.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Knowledge Graph</span>
-                        <span class="tag">LLM</span>
-                        <span class="tag">Selective Abstention</span>
+                    <p class="project-desc">
+                        Neural-symbolic dialogue architecture integrating Selective Abstention Learning (SEAL) with dynamic RDF knowledge graphs. 
+                        Extracts clinical entities, calculates calibrated confidence scores, and returns abstention tokens to prevent hallucinated 
+                        outputs in high-stakes mental health conversations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">PyTorch</span>
+                        <span class="mono-tag">Knowledge Graphs (RDF)</span>
+                        <span class="mono-tag">Selective Prediction</span>
+                        <span class="mono-tag">NLP</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- 3: SEAL Multi-Agent -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-network-wired"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/seal_multi_agent" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">SEAL Multi-Agent System &amp; KG Visualisation</h2>
+                        <a href="https://github.com/ehtesum/seal_multi_agent" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/seal_multi_agent ↗
+                        </a>
                     </div>
-                    <h3>SEAL Multi-Agent System</h3>
-                    <p>Multi-agent AI architecture extending the SEAL framework with automated RDF knowledge graph querying, benchmark evaluation pipelines, and an interactive graph visualization interface.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Multi-Agent</span>
-                        <span class="tag">Knowledge Graph</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">Benchmarking</span>
+                    <p class="project-desc">
+                        Multi-agent extension of the SEAL framework providing autonomous knowledge-graph query orchestration, comprehensive 
+                        benchmark evaluation pipelines, and an interactive graph visualization interface for diagnostic inspection.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">Multi-Agent AI</span>
+                        <span class="mono-tag">Graph Reasoning</span>
+                        <span class="mono-tag">Benchmarking</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- 4: Offline LaTeX Compiler -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-file-pdf"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/offline_latex_compiler" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">Offline LaTeX IDE &amp; Live Compiler</h2>
+                        <a href="https://github.com/ehtesum/offline_latex_compiler" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/offline_latex_compiler ↗
+                        </a>
                     </div>
-                    <h3>Offline LaTeX IDE &amp; Compiler</h3>
-                    <p>Self-hosted, Overleaf-style browser IDE that compiles LaTeX completely locally with zero account or internet required. Features CodeMirror syntax highlighting, real-time PDF rendering with pdf.js, and multi-file projects.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">pdf.js</span>
-                        <span class="tag">Self-Hosted</span>
+                    <p class="project-desc">
+                        Self-hosted, browser-based LaTeX environment running completely locally with zero account or internet connectivity required. 
+                        Features CodeMirror syntax highlighting, multi-file project management, local PDF compilation, and live rendering via pdf.js.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">Flask</span>
+                        <span class="mono-tag">JavaScript (ES Modules)</span>
+                        <span class="mono-tag">pdf.js</span>
+                        <span class="mono-tag">Local Tooling</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- 5: DubStream -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-headphones"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/DubStream" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">DubStream — Audio &amp; Video Streaming Pipeline</h2>
+                        <a href="https://github.com/ehtesum/DubStream" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/DubStream ↗
+                        </a>
                     </div>
-                    <h3>DubStream — Media &amp; Audio Streaming</h3>
-                    <p>High-throughput media processing pipeline engineered for synchronised multilingual video/audio dubbing, subtitle alignment, and low-latency audio stream transformations.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Media Processing</span>
-                        <span class="tag">Streaming</span>
-                        <span class="tag">Audio Pipeline</span>
+                    <p class="project-desc">
+                        High-throughput audio and media processing pipeline engineered for synchronised multilingual video dubbing, subtitle alignment, 
+                        and low-latency streaming audio transformations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">FastAPI</span>
+                        <span class="mono-tag">Media Pipeline</span>
+                        <span class="mono-tag">Streaming</span>
                     </div>
-                </div>
+                </article>
 
                 <!-- 6: Order Forecasting -->
-                <div class="project-card reveal">
-                    <div class="pc-top">
-                        <div class="pc-icon"><i class="fas fa-chart-line"></i></div>
-                        <div class="pc-links">
-                            <a href="https://github.com/ehtesum/order_forecast_from_history" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-item">
+                    <div class="project-top">
+                        <h2 class="project-title">Order Demand Forecasting ML Pipeline</h2>
+                        <a href="https://github.com/ehtesum/order_forecast_from_history" target="_blank" rel="noopener" class="project-link">
+                            github.com/ehtesum/order_forecast_from_history ↗
+                        </a>
                     </div>
-                    <h3>Order Demand Forecasting</h3>
-                    <p>End-to-end ML pipeline for predicting inventory demand volumes from historical time-series data. Implements rolling window feature engineering, regression modeling, and rigorous MAE/RMSE validation.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Scikit-Learn</span>
-                        <span class="tag">Time-Series</span>
-                        <span class="tag">ML</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="projects-more reveal">
-                <a href="https://github.com/ehtesum" target="_blank" rel="noopener" class="btn btn-outline">
-                    <i class="fab fa-github"></i> View All on GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── PUBLICATIONS ─────────────────────────────────── -->
-    <section class="publications section alt-bg" id="publications">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Peer-Reviewed Research</span>
-                <h2 class="section-title">Publi<span class="accent">cations</span></h2>
-            </div>
-
-            <div class="publications-grid">
-                <div class="pub-card reveal">
-                    <div class="pub-icon"><i class="fas fa-book-open"></i></div>
-                    <div class="pub-body">
-                        <h3 class="pub-title">Low-Cost Heart Rate Sensor and Mental Stress Detection Using Machine Learning</h3>
-                        <div class="pub-venue">
-                            <span>5th International Conference on Trends in Electronics and Informatics (ICOEI 2021)</span>
-                            <span class="pub-badge">IEEE Xplore</span>
-                        </div>
-                        <p class="pub-desc">
-                            Engineered and presented cost-effective IoT physiological sensor hardware combined with supervised machine learning algorithms to detect human mental stress states in real time. Published in IEEE Xplore proceedings (DOI: 10.1109/ICOEI51242.2021.9452873).
-                        </p>
-                        <div class="tags">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">IoT Hardware</span>
-                            <span class="tag">Sensor Analysis</span>
-                            <span class="tag">IEEE ICOEI 2021</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── CERTIFICATIONS ───────────────────────────────── -->
-    <section class="certs section" id="certs">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Verified learning</span>
-                <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
-            </div>
-
-            <div class="certs-grid">
-                <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fab fa-docker"></i></div>
-                    <div class="cert-body">
-                        <h3>Docker &amp; Kubernetes Masterclass</h3>
-                        <p>Build, Deploy, &amp; Scale on AWS, Azure, &amp; GCP</p>
-                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy</span>
-                    </div>
-                </div>
-                <div class="cert-card reveal">
-                    <div class="cert-icon"><i class="fas fa-infinity"></i></div>
-                    <div class="cert-body">
-                        <h3>The Ultimate DevOps Bootcamp</h3>
-                        <p>Comprehensive DevOps training covering CI/CD pipelines, Docker, and Linux</p>
-                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── BEYOND CODE ──────────────────────────────────── -->
-    <section class="beyond section alt-bg" id="beyond">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Away from the terminal</span>
-                <h2 class="section-title">Beyond <span class="accent">Code</span></h2>
-            </div>
-
-            <div class="beyond-grid">
-                <div class="beyond-card reveal">
-                    <div class="beyond-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Training</h3>
-                    <ul class="beyond-list">
-                        <li><i class="fas fa-mobile-alt"></i> Android Development Bootcamp</li>
-                        <li><i class="fas fa-trophy"></i> Competitive Programming Bootcamp</li>
-                    </ul>
-                </div>
-                <div class="beyond-card reveal">
-                    <div class="beyond-icon"><i class="fas fa-compass"></i></div>
-                    <h3>Interests &amp; Hobbies</h3>
-                    <ul class="beyond-list">
-                        <li><i class="fas fa-mountain"></i> Hiking in Finland</li>
-                        <li><i class="fas fa-utensils"></i> Cooking</li>
-                        <li><i class="fas fa-chess"></i> Strategic Chess</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ── CONTACT ────────────────────────────────────── -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Let's connect</span>
-                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <p class="contact-lead">
-                        I'm always open to discussing new opportunities, AI research collaborations,
-                        and engineering challenges. Feel free to reach out!
+                    <p class="project-desc">
+                        End-to-end machine learning system predicting future product order volumes from historical time-series data. Features 
+                        automated lag feature engineering, rolling window statistics, regression modeling, and validation for supply chain logistics.
                     </p>
+                    <div class="project-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">Pandas</span>
+                        <span class="mono-tag">Scikit-Learn</span>
+                        <span class="mono-tag">Time-Series</span>
+                    </div>
+                </article>
 
-                    <div class="contact-links">
-                        <a href="mailto:ehtesumulislam@gmail.com" class="contact-link">
-                            <div class="cl-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span>Email</span>
-                                <strong>ehtesumulislam@gmail.com</strong>
-                            </div>
-                        </a>
-                        <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" rel="noopener" class="contact-link">
-                            <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
-                            <div>
-                                <span>LinkedIn</span>
-                                <strong>ehtesum-ul-islam</strong>
-                            </div>
-                        </a>
-                        <a href="https://github.com/ehtesum" target="_blank" rel="noopener" class="contact-link">
-                            <div class="cl-icon"><i class="fab fa-github"></i></div>
-                            <div>
-                                <span>GitHub</span>
-                                <strong>github.com/ehtesum</strong>
-                            </div>
-                        </a>
-                        <a href="https://codeforces.com/profile/ehtesum42" target="_blank" rel="noopener" class="contact-link">
-                            <div class="cl-icon"><i class="fas fa-code"></i></div>
-                            <div>
-                                <span>Codeforces</span>
-                                <strong>ehtesum42</strong>
-                            </div>
-                        </a>
+            </div>
+        </section>
+
+        <!-- ── Research & Publications ────────────────────────── -->
+        <section class="section" id="research">
+            <div class="section-label">// Research &amp; Publications</div>
+
+            <article class="pub-item">
+                <div class="pub-header">
+                    <h2 class="pub-title">Low-Cost Heart Rate Sensor and Mental Stress Detection Using Machine Learning</h2>
+                    <a href="https://doi.org/10.1109/ICOEI51242.2021.9452873" target="_blank" rel="noopener" class="pub-doi-link">
+                        IEEE Xplore ↗
+                    </a>
+                </div>
+                <div class="pub-venue">
+                    5th International Conference on Trends in Electronics and Informatics (ICOEI 2021) • pp. 1369–1374
+                </div>
+                <p class="pub-desc">
+                    Engineered cost-effective IoT physiological sensor hardware combined with supervised machine learning algorithms 
+                    to detect mental stress states from physiological signals in real time. Presented and published in IEEE conference proceedings.
+                </p>
+                <div class="project-tags">
+                    <span class="mono-tag">DOI: 10.1109/ICOEI51242.2021.9452873</span>
+                    <span class="mono-tag">IoT Hardware</span>
+                    <span class="mono-tag">Supervised Learning</span>
+                    <span class="mono-tag">Sensor Processing</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- ── Work Experience ────────────────────────────────── -->
+        <section class="section" id="experience">
+            <div class="section-label">// Work Experience</div>
+
+            <div class="exp-timeline">
+
+                <!-- Role 1 -->
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <span class="exp-role">Junior Software Engineer</span>
+                            <span class="exp-company"> — TechOptions</span>
+                        </div>
+                        <span class="exp-date">Mar 2022 – Jun 2023</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>
+                            <strong>Cloud Infrastructure &amp; LiveOps (Solorrow GmbH, Germany):</strong> Migrated backend services to Microsoft Azure 
+                            virtual machines, configured RabbitMQ message brokers, managed PostgreSQL databases, and automated releases via GitHub Actions 
+                            and Bitbucket CI/CD pipelines.
+                        </li>
+                        <li>
+                            <strong>National Portal Architecture (CCIKM.gov.bd):</strong> Designed the relational database schema, document search indexing, 
+                            and high-throughput REST APIs for Bangladesh’s national climate information portal under UNDP and the Ministry of Environment.
+                        </li>
+                        <li>
+                            <strong>International Engineering Collaboration:</strong> Coordinated directly with German partner engineers from TH Köln 
+                            to standardize API endpoint schemas, payload specifications, and communication contracts.
+                        </li>
+                        <li>
+                            <strong>Interactive Data Visualization:</strong> Built frontend JavaScript interactive time-series sensor charts for real-time 
+                            environmental measurements.
+                        </li>
+                        <li>
+                            <strong>Technical Documentation:</strong> Authored system architecture specifications and recorded walkthrough guides 
+                            to onboard incoming engineers.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <span class="exp-role">Software Engineering Intern</span>
+                            <span class="exp-company"> — TechOptions</span>
+                        </div>
+                        <span class="exp-date">Nov 2021 – Feb 2022</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>
+                            Designed and developed responsive administrative dashboards and data collection tools for the CCIKM platform under UNDP.
+                        </li>
+                        <li>
+                            Configured standardized Docker container development environments to eliminate configuration drift across team environments.
+                        </li>
+                        <li>
+                            Wrote API integration test suites and automated data validation scripts to guarantee regression stability.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── Education ──────────────────────────────────────── -->
+        <section class="section">
+            <div class="section-label">// Education</div>
+
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3 class="edu-degree">M.Sc. Software Engineering &amp; Digital Transformation</h3>
+                    <p class="edu-school">LUT University (Lappeenranta-Lahti University of Technology), Finland</p>
+                    <span class="edu-period">2023 – Dec 2025 (Completed)</span>
+                </div>
+
+                <div class="edu-card">
+                    <h3 class="edu-degree">B.Sc. Computer Science &amp; Engineering</h3>
+                    <p class="edu-school">North South University, Bangladesh</p>
+                    <span class="edu-period">2016 – May 2021 (Graduated)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Technical Capabilities ──────────────────────────── -->
+        <section class="section" id="stack">
+            <div class="section-label">// Technical Capabilities</div>
+
+            <div class="stack-groups">
+                <div class="stack-group">
+                    <div class="stack-group-title">AI &amp; Systems</div>
+                    <div class="stack-group-tags">
+                        <span class="mono-tag">Multi-Agent Systems</span>
+                        <span class="mono-tag">Vision-Language (VLMs)</span>
+                        <span class="mono-tag">Knowledge Graphs (RDF/Turtle)</span>
+                        <span class="mono-tag">Selective Abstention</span>
+                        <span class="mono-tag">PyTorch</span>
+                        <span class="mono-tag">Transformers</span>
+                        <span class="mono-tag">QLoRA &amp; Quantization</span>
                     </div>
                 </div>
 
-                <div class="contact-cta reveal">
-                    <div class="cta-card">
-                        <h3>Ready to collaborate?</h3>
-                        <p>Whether it's an engineering role, PhD/research collaboration, or open-source contribution — let's connect.</p>
-                        <a href="mailto:ehtesumulislam@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send a Message
-                        </a>
-                        <a href="cv.html" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-file-lines"></i> View Interactive CV
-                        </a>
+                <div class="stack-group">
+                    <div class="stack-group-title">Backend &amp; Data</div>
+                    <div class="stack-group-tags">
+                        <span class="mono-tag">Python (Advanced)</span>
+                        <span class="mono-tag">FastAPI</span>
+                        <span class="mono-tag">Django</span>
+                        <span class="mono-tag">Flask</span>
+                        <span class="mono-tag">PostgreSQL</span>
+                        <span class="mono-tag">SQLite</span>
+                        <span class="mono-tag">MongoDB</span>
+                        <span class="mono-tag">RabbitMQ</span>
+                        <span class="mono-tag">RESTful API Design</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="stack-group-title">Cloud &amp; Infrastructure</div>
+                    <div class="stack-group-tags">
+                        <span class="mono-tag">Microsoft Azure</span>
+                        <span class="mono-tag">Docker</span>
+                        <span class="mono-tag">Kubernetes</span>
+                        <span class="mono-tag">CI/CD (GitHub Actions / Bitbucket)</span>
+                        <span class="mono-tag">Linux / Bash</span>
+                        <span class="mono-tag">NGINX</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="stack-group-title">Languages &amp; Core</div>
+                    <div class="stack-group-tags">
+                        <span class="mono-tag">Python</span>
+                        <span class="mono-tag">JavaScript (ES6+)</span>
+                        <span class="mono-tag">C++</span>
+                        <span class="mono-tag">Java</span>
+                        <span class="mono-tag">HTML5 / CSS3</span>
+                        <span class="mono-tag">Git / GitHub</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ── FOOTER ─────────────────────────────────────── -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <a href="#home" class="logo">&lt;Ehtesum /&gt;</a>
-            <p>Designed &amp; built by <span class="accent">Ehtesum-Ul-Islam</span></p>
-            <p class="footer-copy">© 2026 · All rights reserved</p>
-        </div>
-    </footer>
+        <!-- ── Site Footer ────────────────────────────────────── -->
+        <footer class="site-footer">
+            <div>
+                © 2026 Ehtesum-ul-Islam • Built with Vanilla CSS
+            </div>
+            <div class="footer-links">
+                <a href="mailto:ehtesumulislam@gmail.com">Email</a>
+                <a href="https://github.com/ehtesum" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/ehtesum-ul-islam-01274a166/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="cv.html" target="_blank" rel="noopener">View CV</a>
+            </div>
+        </footer>
 
-    <!-- Scroll-to-top button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
