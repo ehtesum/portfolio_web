@@ -937,6 +937,90 @@ img  { display: block; max-width: 100%; }
 }
 
 /* ============================================================
+   PUBLICATIONS & RESEARCH
+============================================================ */
+.publications-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pub-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 28px 30px;
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    transition: var(--ease);
+}
+
+.pub-card:hover {
+    border-color: var(--border-h);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pub-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--accent-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.pub-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.pub-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.pub-venue {
+    color: var(--accent);
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pub-venue .pub-badge {
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.pub-desc {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+}
+
+/* ============================================================
    CONTACT
 ============================================================ */
 .contact-grid {

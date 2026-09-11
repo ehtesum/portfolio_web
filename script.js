@@ -49,11 +49,11 @@ document.querySelectorAll('.mobile-link').forEach(link =>
    TYPEWRITER
 ============================================================ */
 const roles = [
-    'DevOps Engineer',
-    'Backend Developer',
-    'Cloud Architect',
-    'Python Developer',
-    'System Designer',
+    'Software Engineer',
+    'AI Systems Researcher',
+    'Backend Engineer',
+    'DevOps Specialist',
+    'System Architect',
 ];
 
 let rIdx = 0, cIdx = 0, deleting = false;
